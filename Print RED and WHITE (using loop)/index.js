@@ -6,3 +6,4 @@ function printRedAndWhite(num) {
 
 let num = 5;
 printRedAndWhite(num);
+  
