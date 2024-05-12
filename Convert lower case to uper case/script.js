@@ -3,3 +3,4 @@ function convertToUppercase() {
     let outputDiv = document.getElementById('output');
     outputDiv.textContent = inputText.toUpperCase();
 }
+ 

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        #products div {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #products div img {
+            max-width: 100%;
+            height: 300px;
+            width: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        #products div h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        #products div p {
+            font-size: 16px;
+            color: #888;
+            margin-bottom: 5px;
+        }
+
+
+    
+    </style>
+</head>
+
+<body>
+    <div id="products">
+        
+    </div>
+</body>
+<script src="./index.js"></script>
+
+</html>
