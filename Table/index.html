@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+
+
+<body>
+
+
+
+    <form id="studentData">
+
+        <input type="text" placeholder="enter your name" id="name" />
+        <input type="text" placeholder="enter your course" id="course" />
+        <input type="number" placeholder="enter your grid" id="grid" />
+        <input type="submit">
+
+    </form>
+
+    <hr>
+    <div id="studentlist">
+
+        <table border="1px">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Course</th>
+                    <th>Grid</th>
+                    <th id="deleteAll">Delete All</th>
+                </tr>
+            </thead>
+
+            <tbody id="tbody">
+            </tbody>
+
+        </table>
+
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
