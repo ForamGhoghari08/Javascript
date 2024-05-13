@@ -1,4 +1,5 @@
-let data = {' data' : [
+let data = {
+    ' data': [
         {
             "id": 1,
             "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
@@ -49,7 +50,7 @@ let data = {' data' : [
         },
         {
             "id": 5,
-            "title": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+            "title": "John Hardy Women's Legends Naga Gold ",
             "price": 695,
             "description": "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
             "category": "jewelery",
@@ -239,11 +240,13 @@ let data = {' data' : [
                 "count": 145
             }
         }
-    ] 
+    ]
 }
 data[" data"].map((ele) => {
     let image = document.createElement("img");
     image.src = ele.image;
+
+    let br = document.createElement("br");
 
     let price = document.createElement("button");
     price.textContent = `$${ele.price}`;
@@ -255,15 +258,13 @@ data[" data"].map((ele) => {
     price.style.margin = "5px 0";
     price.style.cursor = "pointer";
 
-    let title = document.createElement("h3"); 
+    let title = document.createElement("h3");
     title.textContent = ele.title;
 
     let div = document.createElement("div");
     div.style.textAlign = "center";
-    div.append(image, price, title); 
+    
+    div.append(image, br,price, title);
 
     document.getElementById("products").append(div);
 });
-
-
-
